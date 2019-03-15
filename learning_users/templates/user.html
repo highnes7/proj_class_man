@@ -1,0 +1,18 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+<div class="container" id="mainjmp">
+        <div class="jumbotron">
+            <div class="container">
+              <h6 class="display-4" id="noti">User Info</h6>
+
+{%for user in userdetails%}
+
+<div class="alert alert-info" role="alert">
+        {{user.username}}
+       </div>
+{%endfor%}
+
+</div>
+</div>
+</div>
+{% endblock %}

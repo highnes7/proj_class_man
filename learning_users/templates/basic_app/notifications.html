@@ -1,0 +1,18 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+<div class="container" id="mainjmp">
+        <div class="jumbotron">
+            <div class="container">
+              <h6 class="display-4" id="noti">Notifications</h6>
+
+{%for noti in notifications%}
+
+<div class="alert alert-info" role="alert">
+        {{noti.notification}}
+       </div>
+{%endfor%}
+
+</div>
+</div>
+</div>
+{% endblock %}
